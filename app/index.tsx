@@ -1,17 +1,18 @@
 import AnimatedIntro from "@/components/AnimatedIntro";
 import BottomLoginSheet from "@/components/BottomLoginSheet";
-import { Text, View } from "react-native";
-
-
-export default function Index() {
+import { View, StyleSheet } from "react-native";
+const Page = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-      }}
-    >
-      <AnimatedIntro/>
-      <BottomLoginSheet/>
+    <View style={styles.container}>
+      <AnimatedIntro />
+      <BottomLoginSheet />
     </View>
   );
-}
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
+export default Page;
